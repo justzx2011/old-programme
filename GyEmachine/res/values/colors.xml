@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="translucent_background">#e0000000</color>
+    <color name="ok_color">#fffff68e</color>
+    <color name="mark_title_color">#ff8b260a</color>
+    <color name="myxingbao_color">#ff622800</color>
+    <color name="xingbao_detail_color">#ff782a03</color>
+    <color name="individual_operation_color">#ff003566</color>
+    <color name="black">#ff000000</color>
+    <color name="individual_about">#ff333333</color>
+    <color name="individual_content">#ffeaeef2</color>
+    <color name="individual_service_des">#ff999999</color>
+    <color name="individual_service_contact">#ff007eff</color>
+    <color name="individual_recharge_hint">#ff666666</color>
+    <color name="individual_yuan">#fff16000</color>
+    <color name="individual_id">#ff0084ff</color>
+    <color name="game_line_up">#80000000</color>
+    <color name="geme_line_down">#33ffffff</color>
+    <color name="color_audio_playing">#ffffa800</color>
+    <color name="game_bg_color">#60000000</color>
+    <color name="paint_choose_color">#ff00a8ff</color>
+    <color name="transparent">#00000000</color>
+    <color name="search_age_color">#ff7f7f7f</color>
+    <color name="menu_choose_color">#a0000000</color>
+</resources>

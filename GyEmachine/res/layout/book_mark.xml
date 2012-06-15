@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lin_image" android:background="@color/white" android:padding="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="center" android:id="@id/mark_image" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="24.0px" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/mark_title" android:background="#91000000" android:paddingLeft="10.0px" android:layout_width="fill_parent" android:layout_height="40.0px" android:text="@string/mark_title" />
+        <Button android:layout_gravity="top|right|center" android:id="@id/btn_mark_close" android:background="@drawable/btn_mark_close_click_selector" android:layout_width="21.0px" android:layout_height="22.0px" android:layout_marginTop="10.0px" android:layout_marginRight="10.0px" />
+    </FrameLayout>
+    <View android:id="@id/view" android:layout_width="35.0px" android:layout_height="1.0px" android:layout_toRightOf="@id/lin_image" />
+    <Button android:textSize="22.0px" android:textStyle="bold" android:textColor="@color/ok_color" android:gravity="top|center" android:id="@id/btn_continue" android:background="@drawable/btn_continue_click_selector" android:paddingTop="13.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mark_continue" android:layout_alignRight="@id/view" android:layout_alignBottom="@id/lin_image" />
+</RelativeLayout>

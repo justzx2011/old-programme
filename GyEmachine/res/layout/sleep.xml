@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/sleep_rl" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewFlipper android:id="@id/sleep_flip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/sleep_image1" android:background="@drawable/sleep1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/sleep_image2" android:background="@drawable/sleep2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </ViewFlipper>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="30.0px" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/text_sleep" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sleep_title" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="20.0px" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:text="@string/sleep_text" android:layout_below="@id/text_sleep" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

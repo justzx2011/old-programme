@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/about_bg" android:layout_width="430.0px" android:layout_height="460.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/btn_ok" android:background="@drawable/btn_about_close_click_selector" android:layout_width="41.0px" android:layout_height="41.0px" android:layout_marginTop="10.0px" android:layout_marginRight="10.0px" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="30.0px" android:textStyle="bold" android:textColor="@color/white" android:id="@id/mark_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginTop="12.0px" android:text="@string/about_title" android:drawableLeft="@drawable/i" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/about_linear" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0px" android:layout_marginTop="20.0px" android:layout_below="@id/mark_title" android:layout_alignParentLeft="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0px" android:textColor="@color/black" android:id="@id/about_tv_brief_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0px" android:text="@string/about_brief" />
+            <ScrollView android:id="@id/scrollView" android:fadingEdge="none" android:layout_width="260.0px" android:layout_height="130.0px" android:layout_marginTop="5.0px">
+                <TextView android:textSize="17.0px" android:textColor="@color/individual_about" android:id="@id/about_tv_brief" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingRight="15.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/about_img_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0px" android:src="@drawable/book_img_default" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/about_linear_copyright" android:paddingRight="15.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:layout_below="@id/about_linear" android:layout_alignLeft="@id/about_linear">
+        <TextView android:textSize="18.0px" android:textColor="@color/black" android:id="@id/about_tv_copyright_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_copy" />
+        <TextView android:textSize="17.0px" android:textColor="@color/individual_about" android:id="@id/about_tv_copyright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/about_linear_web" android:paddingRight="15.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/about_linear_copyright" android:layout_alignLeft="@id/about_linear">
+        <TextView android:textSize="18.0px" android:textColor="@color/black" android:id="@id/about_tv_web_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_state" />
+        <TextView android:textSize="17.0px" android:textColor="@color/individual_about" android:id="@id/about_tv_web" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" />
+    </LinearLayout>
+    <ImageView android:id="@id/about_img_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

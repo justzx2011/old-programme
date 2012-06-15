@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_bg" android:layout_width="470.0px" android:layout_height="470.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0px" android:textStyle="bold" android:textColor="@color/myxingbao_color" android:gravity="center" android:id="@id/xingbook_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0px" android:text="@string/netXingBook_down_title" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/xingbookinfo_dialog_btnClose" android:background="@drawable/btn_close_click_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:layout_marginRight="30.0px" android:layout_alignParentRight="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/lin_image" android:paddingLeft="40.0px" android:paddingRight="40.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0px" android:layout_below="@id/xingbook_detail">
+        <FrameLayout android:background="@drawable/shelf_book_item_bg" android:layout_width="138.0px" android:layout_height="158.0px">
+            <ImageView android:layout_gravity="center" android:id="@id/xingbookinfo_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0px" android:layout_marginBottom="1.0px" android:src="@drawable/book_img_default" />
+            <ImageView android:layout_gravity="top|right|center" android:id="@id/xingbookinfo_icon" android:background="@drawable/type_bg" android:layout_width="30.0px" android:layout_height="20.0px" android:layout_marginTop="10.0px" android:layout_marginRight="10.0px" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/rel_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0px">
+            <TextView android:textSize="20.0px" android:textColor="@color/myxingbao_color" android:id="@id/xingbookinfo_dialog_tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0px" android:textColor="@color/xingbao_detail_color" android:id="@id/xingbookinfo_dialog_tv_cat" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0px" android:textColor="@color/xingbao_detail_color" android:id="@id/xingbookinfo_dialog_tv_language" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="15.0px" android:textColor="@color/xingbao_detail_color" android:id="@id/xingbookinfo_dialog_tv_age" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:textSize="16.0px" android:textColor="@color/white" android:id="@id/xingbookinfo_dialog_btnDown" android:background="@drawable/btn_down_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/detail_view_line" android:background="@drawable/xingbao_lin_bg" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="30.0px" android:layout_marginTop="10.0px" android:layout_marginRight="30.0px" android:layout_below="@id/lin_image" />
+    <TextView android:textSize="16.0px" android:textColor="@color/xingbao_detail_color" android:id="@id/xingbookinfo_dialog_tvDesc" android:paddingLeft="40.0px" android:paddingRight="40.0px" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:maxLines="8" android:singleLine="false" android:layout_below="@id/detail_view_line" />
+</RelativeLayout>

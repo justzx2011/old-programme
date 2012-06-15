@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="30.0px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0px" android:textColor="@color/black" android:id="@id/individual_service_tv_type" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_selector_Type" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/individual_service_radiogroup" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:textSize="14.0px" android:textColor="@color/individual_service_des" android:id="@id/individual_service_radio_reponse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/service_questions" />
+            <RadioButton android:textSize="14.0px" android:textColor="@color/individual_service_des" android:id="@id/individual_service_radio_suggest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_suggestions " />
+            <RadioButton android:textSize="14.0px" android:textColor="@color/individual_service_des" android:id="@id/individual_service_radio_demand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_requirement" />
+            <RadioButton android:textSize="14.0px" android:textColor="@color/individual_service_des" android:id="@id/individual_service_radio_consult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_consult" />
+            <RadioButton android:textSize="14.0px" android:textColor="@color/individual_service_des" android:id="@id/individual_service_radio_other" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_other" />
+        </RadioGroup>
+        <TextView android:textColor="@color/individual_about" android:id="@id/individual_sevice_tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0px" android:text="@string/service_give_comments" />
+        <EditText android:gravity="top|left|center" android:id="@id/individual_service_ed_suggest" android:layout_width="600.0px" android:layout_height="120.0px" android:layout_marginTop="5.0px" android:inputType="none">
+            <requestFocus />
+        </EditText>
+        <TextView android:textSize="14.0px" android:textColor="@color/individual_about" android:id="@id/individual_service_tv_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:text="@string/service_your_phone" />
+        <EditText android:id="@id/individual_service_ed_phone" android:layout_width="300.0px" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:singleLine="true" android:inputType="phone" />
+        <TextView android:textSize="14.0px" android:textColor="@color/individual_about" android:id="@id/individual_service_tv_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:text="@string/service_your_mail" />
+        <EditText android:id="@id/individual_service_ed_email" android:layout_width="300.0px" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:singleLine="true" android:inputType="textEmailAddress" />
+        <Button android:textSize="18.0px" android:textColor="@color/white" android:gravity="center" android:id="@id/individual_service_btn_commit" android:background="@drawable/individual_btn_commit_click_selector" android:layout_width="182.0px" android:layout_height="46.0px" android:layout_marginTop="10.0px" android:text="@string/service_submit" />
+        <TextView android:id="@id/individual_service_tv_line" android:background="@drawable/individual_service_line" android:layout_width="wrap_content" android:layout_height="2.0px" android:layout_marginTop="10.0px" />
+        <TextView android:textSize="18.0px" android:textColor="@color/black" android:id="@id/individual_service_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:text="@string/service_contact" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px">
+            <TextView android:textSize="14.0px" android:textColor="@color/individual_about" android:gravity="right" android:layout_width="90.0px" android:layout_height="wrap_content" android:text="@string/service_xingBao_net" />
+            <TextView android:textSize="14.0px" android:textColorLink="@color/individual_service_contact" android:autoLink="web" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_website" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px">
+            <TextView android:textSize="14.0px" android:textColor="@color/individual_about" android:gravity="right" android:layout_width="90.0px" android:layout_height="wrap_content" android:text="@string/service_sina_weibo" />
+            <TextView android:textSize="14.0px" android:textColorLink="@color/individual_service_contact" android:autoLink="web" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_weibo" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px">
+            <TextView android:textSize="14.0px" android:textColor="@color/individual_about" android:gravity="right" android:layout_width="90.0px" android:layout_height="wrap_content" android:text="@string/service_qq" />
+            <TextView android:textSize="14.0px" android:textColor="@color/individual_service_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_qq_text" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px">
+            <TextView android:textSize="14.0px" android:textColor="@color/individual_about" android:gravity="right" android:layout_width="90.0px" android:layout_height="wrap_content" android:text="@string/service_phone" />
+            <TextView android:textSize="14.0px" android:textColor="@color/individual_service_contact" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_phone_text" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

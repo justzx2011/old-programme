@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_bg" android:layout_width="470.0px" android:layout_height="270.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0px" android:textStyle="bold" android:textColor="@color/mark_title_color" android:gravity="center" android:id="@id/mark_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:text="@string/record_title" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="42.0px" android:layout_marginBottom="50.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="17.0px" android:textStyle="bold" android:textColor="@color/ok_color" android:gravity="center" android:id="@id/btn_ok" android:background="@drawable/markitem_click_selector" android:layout_width="138.0px" android:layout_height="42.0px" android:text="@string/ok" />
+        <Button android:textSize="17.0px" android:textStyle="bold" android:textColor="@color/ok_color" android:gravity="center" android:id="@id/btn_cancel" android:background="@drawable/markitem_click_selector" android:layout_width="138.0px" android:layout_height="42.0px" android:layout_marginLeft="50.0px" android:text="@string/cancel" />
+    </LinearLayout>
+</RelativeLayout>

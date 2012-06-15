@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_bg" android:layout_width="470.0px" android:layout_height="270.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0px" android:textColor="@color/myxingbao_color" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:text="@string/myXingBook_downloadPrompt" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="18.0px" android:textColor="@color/xingbao_detail_color" android:id="@id/shelf_download_dlg_msg" android:paddingLeft="30.0px" android:paddingRight="30.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="17.0px" android:textColor="@color/ok_color" android:gravity="center" android:id="@id/shelf_download_ok" android:background="@drawable/markitem_click_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok" />
+        <Button android:textSize="17.0px" android:textColor="@color/ok_color" android:gravity="center" android:id="@id/shelf_download_cancel" android:background="@drawable/markitem_click_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0px" android:text="@string/cancel" />
+    </LinearLayout>
+</RelativeLayout>

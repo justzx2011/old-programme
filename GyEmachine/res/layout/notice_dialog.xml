@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/about_bg" android:layout_width="430.0px" android:layout_height="460.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/notice_dialog_wb" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:layout_marginBottom="14.0px" android:layout_below="@id/notice_title" />
+    <ProgressBar android:id="@id/loading_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateDrawable="@drawable/myprogressbar" android:layout_centerInParent="true" />
+    <Button android:id="@id/btn_ok" android:background="@drawable/btn_about_close_click_selector" android:layout_width="41.0px" android:layout_height="41.0px" android:layout_marginTop="10.0px" android:layout_marginRight="10.0px" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="30.0px" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/notice_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0px" android:text="@string/notice_title" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

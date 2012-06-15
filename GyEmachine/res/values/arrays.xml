@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="readMode">
+        <item>Normal</item>
+        <item>Record</item>
+        <item>Sleep</item>
+    </string-array>
+    <string-array name="innerBookIds">
+        <item>00000000000000000000000000000000</item>
+    </string-array>
+    <string-array name="innerBookNames">
+        <item>Manual</item>
+    </string-array>
+    <string-array name="shelf_menus">
+        <item>Bookshelf</item>
+        <item>Bookcase</item>
+        <item>Bookcase</item>
+    </string-array>
+</resources>

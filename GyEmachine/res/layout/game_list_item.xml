@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="5.0px" android:paddingBottom="5.0px" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/game_img_readed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:src="@drawable/game_list_done" />
+    <TextView android:textSize="18.0px" android:textColor="@color/white" android:id="@id/game_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" />
+</LinearLayout>

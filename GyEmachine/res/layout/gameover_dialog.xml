@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/gameover_dialog_bg" android:layout_width="400.0px" android:layout_height="270.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="24.0px" android:textStyle="bold" android:textColor="#ff902b01" android:gravity="center" android:id="@id/notice_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/gameover_text" android:layout_centerInParent="true" />
+    <Button android:textSize="16.0px" android:textColor="#ff902b01" android:id="@id/gameover_btn_ok" android:background="@drawable/gameover_click_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0px" android:text="@string/gameover" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

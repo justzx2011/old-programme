@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/individual_account_icon" android:layout_width="145.0px" android:layout_height="145.0px" android:src="@drawable/xing_open" />
+                <ImageView android:layout_width="180.0px" android:layout_height="60.0px" android:src="@drawable/start_text" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0px" android:layout_marginTop="10.0px">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0px" android:textColor="@color/black" android:gravity="right" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="100.0px" android:layout_height="wrap_content" android:text="@string/account_id" />
+                    <TextView android:textSize="18.0px" android:textColor="@color/individual_id" android:id="@id/individual_account_id" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0px" android:textColor="@color/black" android:gravity="right" android:layout_width="100.0px" android:layout_height="wrap_content" android:text="@string/account_blance" />
+                    <TextView android:textSize="18.0px" android:textColor="@color/individual_yuan" android:id="@id/individual_account_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" />
+                </LinearLayout>
+                <TextView android:textSize="14.0px" android:textColor="@color/individual_service_des" android:id="@id/individual_account_des" android:layout_width="300.0px" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:text="@string/account_des" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0px">
+            <TextView android:textSize="18.0px" android:textColor="@color/black" android:gravity="right" android:id="@id/individual_account_tv_email_title" android:layout_width="140.0px" android:layout_height="wrap_content" android:text="@string/account_email" />
+            <EditText android:textSize="18.0px" android:textColor="@color/black" android:id="@id/individual_account_tv_email_state" android:layout_width="200.0px" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="3.0px" android:hint="@string/account_unbound" android:singleLine="true" />
+            <Button android:textSize="18.0px" android:textColor="@color/white" android:gravity="center" android:id="@id/individual_account_btn_email_bound" android:background="@drawable/individual_btn_commit_click_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:text="@string/account_save" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingRight="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px">
+            <TextView android:textSize="18.0px" android:textColor="@color/black" android:gravity="right" android:id="@id/individual_account_tv_phone_title" android:layout_width="140.0px" android:layout_height="wrap_content" android:text="@string/account_phone" />
+            <EditText android:textSize="18.0px" android:textColor="@color/black" android:id="@id/individual_account_tv_phone_state" android:layout_width="200.0px" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="3.0px" android:hint="@string/account_unbound" android:singleLine="true" android:inputType="phone" />
+            <Button android:textSize="18.0px" android:textColor="@color/white" android:gravity="center" android:id="@id/individual_account_btn_phone_bound" android:background="@drawable/individual_btn_commit_click_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:text="@string/account_save" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="14.0px" android:textColor="@color/individual_about" android:id="@id/individual_about_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

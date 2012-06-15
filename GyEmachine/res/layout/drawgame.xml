@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/drawgame_rl_parent" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/drawgame_img_draft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/drawgame_img_src" android:background="#ffffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+    <ImageView android:id="@id/game_img_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginTop="10.0px" android:src="@drawable/game_back_selector" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="14.0px" android:textColor="@color/white" android:gravity="center" android:id="@id/drawgame_tv_title" android:background="@drawable/pingame_title_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/game_img_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:layout_marginRight="10.0px" android:src="@drawable/game_refresh_selector" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/game_img_prompt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="76.0px" android:layout_marginRight="10.0px" android:src="@drawable/pingame_img_prompt_selector" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <ImageView android:id="@id/drawgame_img_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginBottom="20.0px" android:src="@drawable/drawgame_img_set_selector" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/drawgame_ll_set" android:background="@drawable/drawgame_bottom_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <GridView android:gravity="center" android:layout_gravity="center" android:id="@id/drawgame_grid_colors" android:background="@drawable/drawgame_colors_bg" android:padding="2.0px" android:fadingEdge="none" android:fadingEdgeLength="0.0px" android:layout_width="382.0px" android:layout_height="103.0px" android:horizontalSpacing="10.0px" android:verticalSpacing="10.0px" android:numColumns="6" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:id="@id/drawgame_btn_qianbi" android:background="@drawable/drawgame_btn_qianbi_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-8.0px" />
+            <Button android:id="@id/drawgame_btn_labi" android:background="@drawable/drawgame_btn_labi_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-6.0px" />
+            <Button android:id="@id/drawgame_btn_makebi" android:background="@drawable/drawgame_btn_makebi_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <Button android:id="@id/drawgame_btn_shuibi" android:background="@drawable/drawgame_btn_shuibi_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-1.0px" />
+            <Button android:id="@id/drawgame_btn_shuifenbi" android:background="@drawable/drawgame_btn_shuifenbi_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-2.0px" />
+            <Button android:id="@id/drawgame_btn_erase" android:background="@drawable/drawgame_btn_blur_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-3.0px" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

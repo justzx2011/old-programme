@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/play_bg" android:visibility="visible" android:layout_width="376.0px" android:layout_height="86.0px">
+        <ImageView android:id="@id/imgPlayControl" android:background="@drawable/pause_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0px" android:layout_marginRight="14.0px" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <SeekBar android:id="@id/seekBarPlayProgress" android:paddingLeft="5.0px" android:paddingRight="5.0px" android:layout_width="180.0px" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginRight="10.0px" android:maxHeight="10.0px" android:progressDrawable="@drawable/seekbar_img" android:minHeight="6.0px" android:thumb="@drawable/seekbar_thumb" android:thumbOffset="3.0px" android:layout_toRightOf="@id/imgPlayControl" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0px" android:textColor="#ffffffff" android:id="@id/tvPlayProgress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/seekBarPlayProgress" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0px" android:textColor="@color/white" android:id="@id/tvVideoPlaying" android:paddingLeft="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0px" android:text="@string/audio_playing" android:layout_below="@id/seekBarPlayProgress" android:layout_alignLeft="@id/seekBarPlayProgress" />
+        <TextView android:textSize="12.0px" android:textColor="@color/white" android:id="@id/tvVideoTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_toRightOf="@id/tvVideoPlaying" android:layout_alignTop="@id/tvVideoPlaying" />
+    </RelativeLayout>
+</RelativeLayout>

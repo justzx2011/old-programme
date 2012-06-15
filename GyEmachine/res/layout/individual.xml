@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/individual_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lin_image" android:background="@drawable/individual_title_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="30.0px" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/mark_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0px" android:text="@string/individual_title" android:layout_centerHorizontal="true" />
+        <Button android:textSize="18.0px" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/individual_btn_back" android:background="@drawable/individual_btn_back_click_selector" android:paddingLeft="10.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:text="@string/netXingBook_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/individual_linear" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/lin_image">
+        <LinearLayout android:orientation="vertical" android:id="@id/individual_operation_linear" android:background="@drawable/individual_operation" android:layout_width="253.0px" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/individual_linear_account" android:background="@drawable/individual_selector" android:layout_width="250.0px" android:layout_height="73.0px">
+                <ImageView android:background="@drawable/individual_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" />
+                <TextView android:textSize="20.0px" android:textColor="@color/individual_operation_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0px" android:text="@string/individual_account" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/individual_linear_recharge" android:background="@drawable/individual_selector" android:layout_width="250.0px" android:layout_height="73.0px" android:layout_marginTop="-1.0px">
+                <ImageView android:background="@drawable/individual_recharge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" />
+                <TextView android:textSize="20.0px" android:textColor="@color/individual_operation_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0px" android:text="@string/individual_recharge" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/individual_linear_gift" android:background="@drawable/individual_selector" android:layout_width="250.0px" android:layout_height="73.0px" android:layout_marginTop="-1.0px">
+                <ImageView android:background="@drawable/individual_gift" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" />
+                <TextView android:textSize="20.0px" android:textColor="@color/individual_operation_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0px" android:text="@string/individual_gift" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/individual_linear_service" android:background="@drawable/individual_selector" android:layout_width="250.0px" android:layout_height="73.0px" android:layout_marginTop="-1.0px">
+                <ImageView android:background="@drawable/individual_service" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" />
+                <TextView android:textSize="20.0px" android:textColor="@color/individual_operation_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0px" android:text="@string/individual_service" />
+            </LinearLayout>
+        </LinearLayout>
+        <include android:id="@id/individual_account" android:visibility="gone" layout="@layout/individual_account" />
+        <include android:id="@id/individual_recharge" android:visibility="gone" layout="@layout/individual_recharge" />
+        <include android:id="@id/individual_gift" android:visibility="gone" layout="@layout/individual_gift" />
+        <include android:id="@id/individual_service" android:visibility="gone" layout="@layout/individual_service" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SlidingDrawer android:orientation="vertical" android:id="@id/endpage_slidingdrawer" android:layout_width="702.0px" android:layout_height="437.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:handle="@id/handle" android:content="@id/content">
+        <Button android:id="@id/handle" android:background="@drawable/btn_more_click_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:gravity="center" android:id="@id/content" android:background="@drawable/more_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/loading_progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <GridView android:id="@id/endPage_gridview" android:paddingLeft="20.0px" android:paddingRight="20.0px" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="20.0px" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:horizontalSpacing="20.0px" android:verticalSpacing="20.0px" android:columnWidth="138.0px" android:numColumns="4" />
+        </RelativeLayout>
+    </SlidingDrawer>
+</RelativeLayout>

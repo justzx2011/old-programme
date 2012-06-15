@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_wood" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="25.0px" android:textColor="@color/white" android:gravity="center" android:layout_gravity="top|center" android:id="@id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.xingbook.ui.GalleryFlow android:id="@id/gallery_flow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0px" android:layout_marginTop="30.0px" android:layout_marginRight="50.0px" />
+    </FrameLayout>
+    <ImageView android:id="@id/btn_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginTop="5.0px" android:src="@drawable/back" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

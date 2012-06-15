@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/shelf_frame" android:background="@drawable/shelf_book_item_bg" android:layout_width="138.0px" android:layout_height="158.0px" android:layout_marginLeft="5.0px">
+        <ImageView android:layout_gravity="center" android:id="@id/item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0px" android:layout_marginBottom="1.0px" android:src="@drawable/book_img_default" />
+        <ImageView android:layout_gravity="top|left|center" android:id="@id/item_state_icon" android:visibility="gone" android:layout_width="38.0px" android:layout_height="38.0px" android:layout_marginLeft="20.0px" android:layout_marginTop="10.0px" />
+        <ProgressBar android:layout_gravity="top|left|center" android:id="@id/item_state_loading" android:visibility="gone" android:layout_width="38.0px" android:layout_height="38.0px" android:layout_marginLeft="20.0px" android:layout_marginTop="10.0px" android:indeterminate="false" android:indeterminateDrawable="@drawable/shelf_downloading_animation" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/item_icon" android:background="@drawable/type_bg" android:layout_width="30.0px" android:layout_height="20.0px" android:layout_marginTop="10.0px" android:layout_marginRight="10.0px" />
+        <ImageView android:layout_gravity="top|left|center" android:id="@id/item_state_new_icon" android:visibility="gone" android:layout_width="50.0px" android:layout_height="51.0px" android:src="@drawable/shelf_item_new" />
+        <TextView android:textSize="16.0px" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/item_state_tv_title" android:background="#a0000000" android:visibility="visible" android:layout_width="136.0px" android:layout_height="30.0px" android:singleLine="true" />
+    </FrameLayout>
+    <ImageView android:id="@id/item_state_reading_icon" android:background="@drawable/shelf_item_reading" android:visibility="invisible" android:layout_width="20.0px" android:layout_height="17.0px" android:layout_marginLeft="-3.0px" android:layout_marginTop="20.0px" android:layout_toRightOf="@id/shelf_frame" />
+    <TextView android:textSize="16.0px" android:textColor="@color/white" android:gravity="center" android:id="@id/item_state_tv_price" android:background="@drawable/shelf_item_price" android:paddingBottom="3.0px" android:visibility="gone" android:layout_width="81.0px" android:layout_height="30.0px" android:layout_marginTop="15.0px" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+</RelativeLayout>

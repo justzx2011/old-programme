@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_bg" android:layout_width="470.0px" android:layout_height="270.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="25.0px" android:textColor="@color/myxingbao_color" android:gravity="center" android:id="@id/guide_dialog_tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="18.0px" android:textColor="@color/xingbao_detail_color" android:id="@id/guide_dialog_tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0px" android:layout_marginRight="20.0px" android:layout_marginBottom="10.0px" android:layout_centerInParent="true" />
+    <Button android:textSize="17.0px" android:textColor="@color/ok_color" android:gravity="center" android:id="@id/btn_warning" android:background="@drawable/markitem_click_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0px" android:text="@string/myXingBook_noBook_know" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

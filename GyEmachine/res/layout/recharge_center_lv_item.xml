@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="20.0px" android:paddingTop="5.0px" android:paddingRight="30.0px" android:paddingBottom="5.0px" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/card_fram" android:background="@drawable/shelf_book_item_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center" android:id="@id/recharge_center_lv_item_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0px" android:layout_marginBottom="1.0px" android:src="@drawable/book_img_default" />
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/item_icon" android:background="@drawable/type_bg" android:layout_width="30.0px" android:layout_height="20.0px" android:layout_marginTop="10.0px" android:layout_marginRight="10.0px" />
+    </FrameLayout>
+    <TextView android:textSize="18.0px" android:textColor="@color/individual_service_contact" android:id="@id/recharge_center_lv_item_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0px" android:layout_marginTop="20.0px" android:layout_toRightOf="@id/card_fram" android:layout_alignParentTop="true" />
+    <TextView android:textSize="16.0px" android:textColor="@color/individual_about" android:ellipsize="end" android:id="@id/recharge_center_lv_item_tv_desc" android:layout_width="wrap_content" android:layout_height="120.0px" android:layout_marginTop="10.0px" android:maxLines="5" android:layout_toRightOf="@id/card_fram" android:layout_below="@id/recharge_center_lv_item_tv_name" android:layout_alignLeft="@id/recharge_center_lv_item_tv_name" />
+</RelativeLayout>

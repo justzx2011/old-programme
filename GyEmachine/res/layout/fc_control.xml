@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fc_control_bg" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:paddingBottom="20.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0px">
+            <ListView android:id="@id/fc_control_lv_language" android:background="@drawable/fc_control_lv_item_bg" android:paddingLeft="4.0px" android:paddingTop="3.0px" android:paddingRight="4.0px" android:paddingBottom="3.0px" android:visibility="invisible" android:layout_width="120.0px" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/fc_control_img_language" android:background="@drawable/fc_control_img_102bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fc_control_img_language" android:scaleType="center" />
+            <TextView android:textSize="20.0px" android:textColor="@color/white" android:gravity="center" android:id="@id/fc_control_tv_language" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px">
+            <ListView android:id="@id/fc_control_lv_readMode" android:background="@drawable/fc_control_lv_item_bg" android:paddingLeft="4.0px" android:paddingTop="3.0px" android:paddingRight="4.0px" android:paddingBottom="3.0px" android:visibility="invisible" android:layout_width="120.0px" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/fc_control_img_read_mode" android:background="@drawable/fc_control_img_102bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+            <TextView android:textSize="20.0px" android:textColor="@color/white" android:gravity="center" android:id="@id/fc_control_tv_readMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fc_read_mode" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px">
+            <ImageView android:id="@id/fc_control_img_startRead" android:background="@drawable/fc_control_img_152bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fc_control_img_start" android:scaleType="center" android:layout_toRightOf="@id/fc_control_img_read_mode" />
+            <TextView android:textSize="20.0px" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fc_start_read" android:layout_below="@id/fc_control_img_startRead" android:layout_alignLeft="@id/fc_control_img_startRead" android:layout_alignRight="@id/fc_control_img_startRead" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0px">
+            <ListView android:layout_gravity="center" android:id="@id/fc_control_lv_game" android:background="@drawable/fc_control_lv_item_bg" android:paddingLeft="4.0px" android:paddingTop="3.0px" android:paddingRight="4.0px" android:paddingBottom="3.0px" android:visibility="invisible" android:layout_width="120.0px" android:layout_height="wrap_content" android:dividerHeight="0.0dip" />
+            <ImageView android:id="@id/fc_control_img_game" android:background="@drawable/fc_control_img_102bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fc_control_img_game" android:scaleType="center" />
+            <TextView android:textSize="20.0px" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fc_game_center" />
+        </LinearLayout>
+        <RelativeLayout android:gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/fc_control_img_about" android:background="@drawable/fc_control_img_102bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/fc_control_img_about" android:scaleType="center" />
+            <TextView android:textSize="20.0px" android:textColor="@color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fc_about" android:layout_below="@id/fc_control_img_about" android:layout_alignLeft="@id/fc_control_img_about" android:layout_alignRight="@id/fc_control_img_about" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

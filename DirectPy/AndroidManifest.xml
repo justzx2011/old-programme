@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.DirectPy"
+    android:versionCode="1"
+    android:versionName="1.0"
+    >
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+                > 
+        <activity
+            android:name=".DirectPy"
+            android:label="@string/app_name" 
+            android:screenOrientation="landscape" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">  
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.Smxx.Smxx"
+            android:label="@string/app_name_smxx" 
+            android:screenOrientation="landscape" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"> 
+        </activity>
+        <activity 
+            android:name="com.Ymxx.Ymxx"
+            android:label="@string/app_name_ymxx" 
+            android:screenOrientation="landscape" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"> 
+        </activity>
+        <activity 
+            android:name="com.Pdlx.Pdlx"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:label="@string/app_name_pdlx" > 
+        </activity>
+        <activity 
+            android:name="com.Yjlx.Yjlx"
+            android:label="@string/app_name_yjlx" 
+            android:screenOrientation="landscape" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"> 
+        </activity>
+        <activity 
+            android:name="com.About.About"
+            android:label="@string/app_name_about" 
+            android:screenOrientation="landscape" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"> 
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+</manifest>

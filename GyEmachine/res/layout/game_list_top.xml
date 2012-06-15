@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0px">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/game_list_top_line" />
+        <ImageView android:id="@id/game_img_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:src="@drawable/fc_control_game_diff" />
+        <TextView android:textSize="20.0px" android:textStyle="bold" android:textColor="@color/white" android:id="@id/game_tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0px" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|center" android:background="@drawable/audio_list_line" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>
